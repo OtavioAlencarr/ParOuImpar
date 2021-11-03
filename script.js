@@ -8,13 +8,13 @@ function parOuImpar(computador,usuario,total){
     let ePar = document.getElementById('escolha').value === 'Par' 
     let totalEPar = total % 2 == 0
     let mensagem = ''
-    document.getElementById('sorteio').innerText = `O número sorteado foi ${computador}`
+    document.getElementById('sorteio').innerText = `O número sorteado pelo computador foi ${computador}`
     if (ePar && totalEPar){
-                mensagem = `O número ${total} é par,Parabéns, você venceu`}
+                mensagem = `O número ${total} é par, Parabéns, você venceu`}
     else if (ePar && !totalEPar){
                 mensagem = `O número ${total} é ímpar, Sinto muito, você perdeu`}
     else if (!ePar && !totalEPar){
-                mensagem = `O número ${total} é ímpar,Parabéns, você venceu`}
+                mensagem = `O número ${total} é ímpar, Parabéns, você venceu`}
     else if (!ePar && totalEPar){
                 mensagem = `O número ${total} é par, Sinto muito, você perdeu`}
     document.getElementById('resultado').innerText = mensagem

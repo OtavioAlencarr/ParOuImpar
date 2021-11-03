@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParOuImpar</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Bem vindo ao jogo Par ou Ímpar</h1>
+    <h2>Para jogar escolha entre Par ou Ímpar e depois digite um número,o computador irá sortear o número que vai disputar com o seu </h2>
+    <h3>Selecione entre Par ou Ímpar:</h3>
+    <select name="seleção" id="escolha">
+        <option value="Par" id="opcao1">Par</option>
+        <option value="impar" id="opcao2">ímpar</option>
+    </select>
+    <h3>Agora digite um número</h3>
+    <input type="text" id='numeroUsuario' placeholder="Seu número:">
+    <button onclick="parOuImpar()">Ver resultado</button><br>
+    <label for="" id='resultado'>Avaliando resultado...</label>
+</body>
+</html>
